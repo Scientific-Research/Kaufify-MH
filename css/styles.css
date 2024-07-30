@@ -12,3 +12,9 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
+/* after adding the google font to our html: I put the font-family here and all the elements will automatically inherited from that!*/
+body {
+  /* all are sans-serif fonts */
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
