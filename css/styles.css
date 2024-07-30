@@ -1,8 +1,8 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 /* defining global variables to use them anywhere in our program - using root Pseudo class selector which matches the html element!*/
 :root {
@@ -17,4 +17,5 @@
 body {
   /* all are sans-serif fonts */
   font-family: Inter, Arial, Helvetica, sans-serif;
+  color: var(--color-body);
 }
