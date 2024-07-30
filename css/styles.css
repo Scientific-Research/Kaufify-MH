@@ -4,6 +4,11 @@
   padding: 0;
 }
 
-body{
-  background-color: gold;
+/* defining global variables to use them anywhere in our program - using root Pseudo class selector which matches the html element!*/
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
 }
