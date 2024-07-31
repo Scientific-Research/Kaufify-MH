@@ -13,10 +13,19 @@
   --color-body: #918ca4;
 }
 
+html {
+  /* font-size: 16px; */
+  /*by default is 16px => this is set by the browser*/
+
+  /* 62.5% of 16px is 10px */
+  font-size: 62.5%; /*one rem is 10px!*/
+}
+
 /* after adding the google font to our html: I put the font-family here and all the elements will automatically inherited from that!*/
 body {
   /* all are sans-serif fonts */
   font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
   color: var(--color-body);
 }
 
@@ -24,4 +33,17 @@ h1,
 h2,
 h3 {
   color: var(--color-headings);
+}
+
+h1 {
+  /*1 x font-size of html element*/
+  font-size: 7rem; /*10px*/
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
 }
