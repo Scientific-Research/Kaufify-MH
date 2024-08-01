@@ -116,3 +116,26 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Badges */
+
+.badge {
+  /* border-radius: 20px; */
+  /* it doesn't wrap itself to the second line - whatever we put in this line,it will not wrap and would be always in one line!*/
+  border-radius: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+/* Using BEM with double -- */
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
