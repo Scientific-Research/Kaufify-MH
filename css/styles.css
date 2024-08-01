@@ -13,6 +13,7 @@
   --color-body: #918ca4;
 }
 
+/* Typography */
 html {
   /* font-size: 16px; */
   /*by default is 16px => this is set by the browser*/
@@ -70,4 +71,14 @@ h3 {
   h3 {
     font-size: 2.4rem;
   }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
 }
