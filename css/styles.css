@@ -81,4 +81,11 @@ a {
 .link-arrow {
   color: var(--color-accent);
   text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 0.5rem;
 }
