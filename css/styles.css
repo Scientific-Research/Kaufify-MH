@@ -143,3 +143,14 @@ a {
 .badge--small {
   font-size: 1.6rem;
 }
+
+/* for wider screens, we make the font sizes a little bit smaller! */
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
