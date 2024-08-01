@@ -139,3 +139,7 @@ a {
   background: var(--color-secondary);
   color: #fff;
 }
+
+.badge--small {
+  font-size: 1.6rem;
+}
