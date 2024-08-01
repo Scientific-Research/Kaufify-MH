@@ -88,4 +88,25 @@ a {
 .link-arrow::after {
   content: "-->";
   margin-left: 0.5rem;
+
+  /* we have to put the transition here => the parent of .link-arrow:hover::after */
+  transition: transform 0.5s;
+
+  /* We have to put the relative position here as parent! */
+  position: relative;
+}
+
+/* .link-arrow:hover { */
+.link-arrow:hover::after {
+  /* My Solution using the transform and absolute and relative positions! */
+  transform: translateX(1rem);
+
+  /* to use the transform, we have to use the child here as absolute position and the parent as relative position above! */
+  position: absolute;
+  top: 0.43rem;
+  /* bottom: 0; */
+  /* left: 0; */
+
+  /* Mosh Solution => very simple*/
+  /* margin-left: 1rem; */
 }
