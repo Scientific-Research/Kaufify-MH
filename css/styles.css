@@ -110,3 +110,9 @@ a {
   /* Mosh Solution => very simple*/
   /* margin-left: 1rem; */
 }
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
