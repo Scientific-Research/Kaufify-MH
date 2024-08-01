@@ -117,22 +117,24 @@ a {
   }
 }
 
-/* Badges */
+/* Badges => using Object Oriented CSS principle => we have to separate the structure from skin*/
 
+/* Our basic structure => in one class */
 .badge {
   /* border-radius: 20px; */
   /* it doesn't wrap itself to the second line - whatever we put in this line,it will not wrap and would be always in one line!*/
   border-radius: 2rem;
   font-size: 2rem;
   font-weight: 600;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2rem; /*0.5rem for vertical padding and 2rem for horizontal padding!*/
   white-space: nowrap;
 }
 
-/* Using BEM with double -- */
+/* applying our skins using BEM naming convention(Block Element Modifier) with double hyphen(--) in a few other classes below:*/
+/* Example for BEM => using two hyphens(--), we separate the BLOCK which is badge from MODIFIER which is primary! */
 .badge--primary {
   background: var(--color-primary);
-  color: #fff;
+  color: #fff; /*the text color!*/
 }
 
 .badge--secondary {
