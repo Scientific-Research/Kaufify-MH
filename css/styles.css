@@ -206,3 +206,9 @@ a {
     padding-left: 0; /* a smaller internal distance between the tick and the items using padding*/
   }
 }
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
