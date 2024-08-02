@@ -1,4 +1,7 @@
-* {
+/* Universal RESET */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -263,6 +266,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   padding: 2rem 3rem;
+  text-align: center;
   text-transform: uppercase;
   white-space: nowrap; /*when there is not enough space, i don't want to go to the next line!*/
 }
@@ -294,4 +298,10 @@ a {
 
 .btn--accent:hover {
   background: #ec3000;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+  /* ancher elements are inline element by default, therefore, width:100% will not work and we have to change the display to the inline-block. */
 }
