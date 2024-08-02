@@ -184,6 +184,7 @@ a {
   /* padding-left: 2rem; */
   /* padding-left: 5rem; */
   padding-left: 0.5rem; /*internal distance between the tick and the items using padding*/
+  margin-bottom: 1rem; /*horizontal distance between every item!*/
 }
 
 .list--tick {
