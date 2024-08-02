@@ -223,10 +223,26 @@ a {
 }
 
 /* MY SOLUTION => to make a circle around the icon--primary - i used the below class(circle-around-icon) to do that!*/
-.circle-around-icon {
+/* .circle-around-icon {
   width: 6.4rem;
   height: 6.4rem;
   background: #f3f9fa;
   padding: 0.8rem;
   border-radius: 50%;
+} */
+
+/* MOSH SOLUTION => to make a circle around the icon--primary - mosh uses span element with icon-container class around the svg component as following:*/
+.icon-container {
+  background: #f3f9fa;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  /* span is an inline element and width and height have no effect on the inline element => that's why i have to chnage it to the inline-block and not block because maybe in the feature i want to put it beside another element and i don't want the line-break with this element. */
+
+  /* display: inline-block; with this, the icon is not exactly in the middle of its surrounding circle, that's why i choose the display:flex*/
+  /* IT WOULD BE BETTER TO CHOOSE THE inline-flex INSTEAD OF THE FLEX, BECAUSE flex IS A BLOCK ELEMENT AND WE WILL HAVE A LINE-BREAK WHEN WE HAVE ANOTHER ELEMENT BESIDE IT. THAT'S WHY IT WOULD BE BETTER TO CHOOSE inline-flex INSTEAD OF ONLY flex! */
+  /* display: flex; */
+  display: inline-flex;
+  align-items: center; /* align vertically */
+  justify-content: center; /* align horizontally*/
 }
