@@ -254,15 +254,17 @@ a {
 /* THIS IS THE BEAUTY OF OOCSS TO HAVE ONE SEPARATED STRUCTURE FROM DIFFERENT SKINS AND WITH OMITTING; ADDING OR COMBINING THE SKINS; WE CAN ACHIEVE DIFFERENT RESULTS!*/
 .btn {
   /* background-color: rgb(128, 200, 224); */
+  /* color: white; */
+  /* letter-spacing: 0.25px; */
+  /* width: 15rem; */
   border-radius: 4rem;
   border: none; /*OR border:0*/
-  /* color: white; */
+  cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  /* letter-spacing: 0.25px; */
   padding: 2rem 3rem;
   text-transform: uppercase;
-  /* width: 15rem; */
+  white-space: nowrap; /*when there is not enough space, i don't want to go to the next line!*/
 }
 
 /* applying our skins using BEM naming convention(Block Element Modifier) with double hyphen(--) in a few other classes below:*/
