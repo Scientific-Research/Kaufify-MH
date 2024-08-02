@@ -247,3 +247,20 @@ a {
   align-items: center; /* align vertically */
   justify-content: center; /* align horizontally*/
 }
+
+/* BUTTONS */
+/* BUTTONS => using Object Oriented CSS principle => we have to separate the structure from skin*/
+/* Our basic structure => in one class */
+/* THIS IS THE BEAUTY OF OOCSS TO HAVE ONE SEPARATED STRUCTURE FROM DIFFERENT SKINS AND WITH OMITTING; ADDING OR COMBINING THE SKINS; WE CAN ACHIEVE DIFFERENT RESULTS!*/
+.btn {
+  /* background-color: rgb(128, 200, 224); */
+  border-radius: 4rem;
+  border: none; /*OR border:0*/
+  /* color: white; */
+  font-size: 1.8rem;
+  font-weight: 600;
+  /* letter-spacing: 0.25px; */
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  /* width: 15rem; */
+}
