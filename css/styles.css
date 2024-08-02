@@ -306,3 +306,10 @@ a {
   display: inline-block;
   /* ancher elements are inline element by default, therefore, width:100% will not work and we have to change the display to the inline-block. */
 }
+
+/* for wider screens */
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
