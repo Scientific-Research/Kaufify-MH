@@ -208,7 +208,16 @@ a {
 }
 
 /* Icons */
+/* Icons => using Object Oriented CSS principle => we have to separate the structure from skin*/
+/* Our basic structure => in one class */
 .icon {
   width: 40px;
   height: 40px;
+}
+
+/* applying our skins using BEM naming convention(Block Element Modifier) with double hyphen(--) in a few other classes below:*/
+/* Example for BEM => using two hyphens(--), we separate the BLOCK which is icon from MODIFIER which is primary! */
+.icon--primary {
+  /* fill applies only to SVG images! */
+  fill: var(--color-primary);
 }
