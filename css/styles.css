@@ -179,3 +179,16 @@ a {
   display: inline-block;
   margin-right: 2rem;
 }
+
+.list--tick {
+  /* background: url(/images/tick.svg); this sets only the background image of an element.The image will be displayed behind the content of the element but it doesn't set the image to be used as the bullet point for list items(<li> items)*/
+
+  /* list-style-image: url(/images/tick.svg); MOSH SOLUTION => THIS COMMAND AND BELOW ONE HAVE THE SAME RESULT!*/
+  /* list-style: circle; */
+  /* list-style: disc; */
+
+  /* NOT ONLY, WE CAN SPECIFY CIRCLE OR DISC TO THE LIST-STYLE, RATHER, WE CAN SPECIFY AN IMAGE TO THE LIST-STYLE AS FOLLOWING: */
+  list-style: url(/images/tick.svg); /* MY SOLUTION => this sets the image to be used as the bullet point for list items(<li> items)*/
+
+  padding-left: 3rem; /*to bring them on the screen, we have to give it a padding-left!*/
+}
