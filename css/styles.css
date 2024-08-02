@@ -265,6 +265,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
+  margin: 1rem 0; /*margin only in vertical direction!*/
   padding: 2rem 3rem;
   text-align: center;
   text-transform: uppercase;
