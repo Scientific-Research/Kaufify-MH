@@ -174,10 +174,16 @@ a {
 }
 
 /* OR THE FOLLOWING => MOSH SOLUTION: */
-.list--inline .list__item {
+/* .list--inline .list__item { */
+/* WE NEED NESTED SELECTORS HERE, BECAUSE WE WANT TO APPLY THE FEATURES ONLY TO list__item AND NOT ALL LIST ITEMS! */
+.list--tick .list__item {
   /* display: inline; if we use this, we can not specify the margin to that!*/
-  display: inline-block;
-  margin-right: 2rem;
+  /* display: inline-block; */
+  /* display: block; */
+  /* margin-right: 2rem; */
+  /* padding-left: 2rem; */
+  /* padding-left: 5rem; */
+  padding-left: 0.5rem; /*internal distance between the tick and the items using padding*/
 }
 
 .list--tick {
@@ -190,5 +196,5 @@ a {
   /* NOT ONLY, WE CAN SPECIFY CIRCLE OR DISC TO THE LIST-STYLE, RATHER, WE CAN SPECIFY AN IMAGE TO THE LIST-STYLE AS FOLLOWING: */
   list-style: url(/images/tick.svg); /* MY SOLUTION => this sets the image to be used as the bullet point for list items(<li> items)*/
 
-  padding-left: 3rem; /*to bring them on the screen, we have to give it a padding-left!*/
+  margin-left: 3rem; /*to bring ticks on the screen, we have to give it a padding-left!*/
 }
