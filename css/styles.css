@@ -199,3 +199,10 @@ a {
 
   margin-left: 3rem; /*to bring ticks on the screen, we have to give it a padding-left!*/
 }
+
+/* for wider screens */
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0; /* a smaller internal distance between the tick and the items using padding*/
+  }
+}
