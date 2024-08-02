@@ -156,3 +156,9 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* Lists */
+.list {
+  list-style: none; /*to get ride of default bullet points*/
+  color: var(--color-headings);
+}
