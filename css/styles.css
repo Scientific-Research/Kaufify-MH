@@ -118,7 +118,6 @@ a {
 }
 
 /* Badges => using Object Oriented CSS principle => we have to separate the structure from skin*/
-
 /* Our basic structure => in one class */
 .badge {
   /* border-radius: 20px; */
@@ -158,7 +157,25 @@ a {
 }
 
 /* Lists */
+/* Lists => using Object Oriented CSS principle => we have to separate the structure from skin*/
+/* Our basic structure => in one class */
 .list {
   list-style: none; /*to get ride of default bullet points*/
   color: var(--color-headings);
+}
+
+/* applying our skins using BEM naming convention(Block Element Modifier) with double hyphen(--) in a few other classes below:*/
+/* Example for BEM => using two hyphens(--), we separate the BLOCK which is list from MODIFIER which is inline! */
+
+/* MY SOLUTION => USING FLEX TO PUT THE LI ITEMS IN A ROW(HORIZONTALY) */
+.list--inline {
+  /* display: flex; */
+  /* gap: 2rem; */
+}
+
+/* OR THE FOLLOWING => MOSH SOLUTION: */
+.list--inline .list__item {
+  /* display: inline; if we use this, we can not specify the margin to that!*/
+  display: inline-block;
+  margin-right: 2rem;
 }
