@@ -272,12 +272,12 @@ a {
   color: #fff;
 }
 
-.btn-secondary {
+.btn--secondary {
   background: var(--color-secondary);
   color: #fff;
 }
 
-.btn-accent {
+.btn--accent {
   background: var(--color-accent);
   color: #fff;
 }
