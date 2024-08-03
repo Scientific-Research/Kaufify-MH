@@ -348,8 +348,21 @@ a {
 
 .input-group {
   border: 1px solid var(--color-border);
-  display: inline-flex;
   border-radius: var(--border-radius);
+
+  /* display: inline-flex; => the text and the SEARCH button have to be apart from each other in right and left side, that's why inline doesn't work here because it brings these two parts together!*/
+  display: flex;
+  justify-content: space-between; /* MY SOLUTION => to put the text in left hand and the SEARCH button in right hand!*/
+}
+
+.input-group .btn {
+  margin: 0.5rem;
+}
+
+.input-group .input {
+  border: 0;
+
+  /* flex-grow: 1; */ /* MOSH SOLUTION => to grow up the flex container and take all the available space!*/
 }
 
 /* Input for wider screen */
