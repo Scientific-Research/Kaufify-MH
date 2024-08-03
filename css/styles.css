@@ -401,7 +401,13 @@ a {
 
 /* applying our skins using BEM naming convention(Block Element Modifier) with double hyphen(--) in a few other classes below:*/
 /* Example for BEM => using two hyphens(--), we separate the BLOCK which is card from MODIFIER which is primary! */
+/* WE HAVE TWO REUSABLE CARD COMPONENTS: TO TEST THEM, IT IS JUST ENOUGH TO CHANGE THE NAME(primary, secondary) OF THE CARD IN INDEX.HTML FILE.*/
 .card--primary .card__header {
   background: var(--color-primary);
+  color: #fff;
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
   color: #fff;
 }
