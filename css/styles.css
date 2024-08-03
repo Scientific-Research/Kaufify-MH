@@ -441,3 +441,7 @@ a {
   font-weight: 300; /*to make the font thinner!*/
   letter-spacing: 0.1rem;
 }
+
+.plan .list__item {
+  margin-bottom: 2rem; /*horizontal distance between every item!*/
+}
