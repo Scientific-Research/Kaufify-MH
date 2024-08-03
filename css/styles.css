@@ -377,3 +377,15 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* CARDS */
+/* CARDS => using Object Oriented CSS principle => we have to separate the structure from skin*/
+/* Our basic structure => in one class */
+/* THIS IS THE BEAUTY OF OOCSS TO HAVE ONE SEPARATED STRUCTURE FROM DIFFERENT SKINS AND WITH OMITTING; ADDING OR COMBINING THE SKINS; WE CAN ACHIEVE DIFFERENT RESULTS!*/
+.card {
+  border-radius: 0.7rem;
+  /* horizontal and vertical offsets, bluring the shadow and making it softer, spreading the shadow, the larger this value, the bigger the shadow is gonna be! */
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  display: flex;
+  flex-grow: 1;
+}
