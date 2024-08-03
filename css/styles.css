@@ -412,6 +412,10 @@ a {
   color: #fff;
 }
 
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+
 /* PLANS */
 .plan__name {
   color: #fff;
@@ -426,4 +430,6 @@ a {
 
 .plan__billing-cycle {
   font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
 }
