@@ -440,6 +440,8 @@ a {
   font-size: 2rem;
   font-weight: 300; /*to make the font thinner!*/
   letter-spacing: 0.1rem;
+  display: block;
+  /*description is a span element and span is an inline element and for wider screen, it stays beside the billing-cycle component and doesn't go to the next line - we need a line-break here and therefore we have to change the display from inline to block!*/
 }
 
 .plan .list__item {
