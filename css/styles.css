@@ -386,6 +386,6 @@ a {
   border-radius: 0.7rem;
   /* horizontal and vertical offsets, bluring the shadow and making it softer, spreading the shadow, the larger this value, the bigger the shadow is gonna be! */
   box-shadow: 0 0 20px 10px #f3f3f3;
-  display: flex;
-  flex-grow: 1;
+  /* display: flex;
+  flex-grow: 1; */
 }
