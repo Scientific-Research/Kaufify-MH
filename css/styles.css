@@ -366,6 +366,9 @@ a {
 
   flex-grow: 1;
   /* MOSH SOLUTION => to grow up the flex container and take all the available space!*/
+
+  padding: 1.5rem 1rem;
+  /*The important point here is that, we want to reduce the vertical space between wordpress icon and the text but only and only when the input is in the input-group and not our original input, that's why i change the vertical padding here and not in the original(basic) input above!*/
 }
 
 /* Input for wider screen */
