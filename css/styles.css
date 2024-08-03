@@ -389,3 +389,8 @@ a {
   /* display: flex;
   flex-grow: 1; */
 }
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
