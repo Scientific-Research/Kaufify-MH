@@ -352,7 +352,9 @@ a {
 
   /* display: inline-flex; => the text and the SEARCH button have to be apart from each other in right and left side, that's why inline doesn't work here because it brings these two parts together!*/
   display: flex;
-  justify-content: space-between; /* MY SOLUTION => to put the text in left hand and the SEARCH button in right hand!*/
+  /* justify-content: space-between;  */
+  /* MY SOLUTION => to put the text in left hand and the SEARCH button in right hand!*/
+  /* MY SOLUTION doesn't work when i type something in input field, it types only the size of placeholder and doesn't go further, that's why i have to use the MOSH SOLUTION which is flex-grow:1, in this case, the input will grow to takes all the input field from left to right side of the page! */
 }
 
 .input-group .btn {
@@ -362,7 +364,8 @@ a {
 .input-group .input {
   border: 0;
 
-  /* flex-grow: 1; */ /* MOSH SOLUTION => to grow up the flex container and take all the available space!*/
+  flex-grow: 1;
+  /* MOSH SOLUTION => to grow up the flex container and take all the available space!*/
 }
 
 /* Input for wider screen */
