@@ -14,6 +14,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 3rem;
 }
 
 /* Typography */
@@ -331,8 +333,8 @@ a {
 /* THIS IS THE BEAUTY OF OOCSS TO HAVE ONE SEPARATED STRUCTURE FROM DIFFERENT SKINS AND WITH OMITTING; ADDING OR COMBINING THE SKINS; WE CAN ACHIEVE DIFFERENT RESULTS!*/
 .input {
   /* border-radius: 30px; */
-  border-radius: 3rem;
-  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
   color: var(--color-headings);
   font-size: 2rem;
   outline: none; /* Oder outline:0 */
@@ -342,6 +344,12 @@ a {
 /* using pseudo element to change the color of placeholder! */
 .input::placeholder {
   color: #cdcbd7;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  display: inline-flex;
+  border-radius: var(--border-radius);
 }
 
 /* Input for wider screen */
