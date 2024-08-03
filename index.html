@@ -77,11 +77,20 @@
     <div style="width: 30%; margin: 4rem">
       <!-- .card -->
       <!-- card__header, __(two underscores) means that this class is an internal class and can not be available outside of the card class => it belongs only to the card class!  -->
-      <div class="card card--secondary">
-        <header class="card__header">Card Title</header>
-        <div class="card__body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-          quod.
+      <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <!-- span.badge.badge--secondary.badge--small -->
+            <span class="badge badge--secondary badge--small">10% OFF</span>
+            <span class="plan__description">Easy Start on the Cloud</span>
+          </header>
+          <div class="card__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            quod.
+          </div>
         </div>
       </div>
     </div>
