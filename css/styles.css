@@ -34,6 +34,7 @@ body {
   font-size: 2.4rem;
   line-height: 1.5; /*1.5 times the current size*/
   color: var(--color-body);
+  /* padding: 4rem; */
 }
 
 h1,
@@ -388,6 +389,7 @@ a {
   box-shadow: 0 0 20px 10px #f3f3f3;
   /* display: flex;
   flex-grow: 1; */
+  overflow: hidden; /*we have border-radius:0.7rem for entire card, but when we add background color to the header of the card, it will grow and goes beyond its parent which is card => in this case, overflow happens which is visible as default and it means we can see the overflow => two edges with blue color header and with overflow:hidden, we can hide these two edges with blue color header and see again the round two edges at top of the card of course with blue color:)*/
 }
 
 .card__header,
@@ -401,5 +403,3 @@ a {
   background: var(--color-primary);
   color: #fff;
 }
-
-
