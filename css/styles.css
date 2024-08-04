@@ -14,6 +14,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-body-darker: #5c5577;
   --color-border: #ccc;
   --border-radius: 3rem;
 }
@@ -516,7 +517,18 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .quote {
   font-size: 3rem;
   font-style: italic;
-  color: #5c5577;
+  color: var(--color-body-darker);
+  line-height: 1.3;
+}
+
+.quote p::before {
+  display: inline-flex;
+  content: "“";
+}
+
+.quote p::after {
+  display: inline-flex;
+  content: "”";
 }
 
 /* for wider screens */
