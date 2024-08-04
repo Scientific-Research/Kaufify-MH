@@ -492,6 +492,22 @@ a {
   /* left: 33rem; */
 }
 
+/* MEDAI OBJECTS */
+.media {
+  display: flex;
+  column-gap: 2rem;
+}
+
+/* I made margin:0 in Universal RESET, so, i don't need to repeat it again here(This is mosh solution!)*/
+/* .media__title {
+  margin-top: 0;
+}
+
+I set the column-gap above for 2rem and i don't need to use the below margin for 2rem anymore(mosh solution!)
+.media__body {
+  margin: 0 2rem;
+} */
+
 /* for wider screens */
 @media screen and (min-width: 1024px) {
   /* We make font-size for all the below classes for wider screens smaller! */
