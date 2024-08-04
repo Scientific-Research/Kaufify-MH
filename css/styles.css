@@ -531,6 +531,18 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   content: close-quote;
 }
 
+.media .media__body {
+  margin-top: 1.5rem;
+}
+
+.media__title {
+  font-weight: 900;
+}
+
+.media .media__body .media__name {
+  color: var(--color-body);
+}
+
 /* for wider screens */
 @media screen and (min-width: 1024px) {
   /* We make font-size for all the below classes for wider screens smaller! */
