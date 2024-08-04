@@ -508,6 +508,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   margin: 0 2rem;
 } */
 
+.media__image {
+  margin-top: 1rem;
+}
+
 /* for wider screens */
 @media screen and (min-width: 1024px) {
   /* We make font-size for all the below classes for wider screens smaller! */
