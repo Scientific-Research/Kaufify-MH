@@ -535,8 +535,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   margin-top: 1.5rem;
 }
 
-.media__title {
-  font-weight: 900;
+/* .media .media__body .media__title{ */
+.quote__author {
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .media .media__body .media__name {
