@@ -532,7 +532,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 .media .media__body {
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
 }
 
 /* .media .media__body .media__title{ */
@@ -540,10 +540,15 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   font-size: 3rem;
   font-weight: 500;
   font-style: normal;
+  margin-bottom: 0;
 }
 
-.media .media__body .media__name {
-  color: var(--color-body);
+/* .media .media__body .quote__organization { */
+.quote__organization {
+  color: var(--color-headings);
+  opacity: 0.4;
+  font-size: 2rem;
+  font-style: normal;
 }
 
 /* for wider screens */
