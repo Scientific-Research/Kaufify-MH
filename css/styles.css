@@ -521,14 +521,14 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   line-height: 1.3;
 }
 
-.quote p::before {
-  display: inline-flex;
-  content: "“";
+.quote--primary .quote__text::before {
+  /* content: "“"; */
+  content: open-quote; /*this is the predefined value in html*/
 }
 
-.quote p::after {
-  display: inline-flex;
-  content: "”";
+.quote--primary .quote__text::after {
+  /* content: "”"; */
+  content: close-quote;
 }
 
 /* for wider screens */
