@@ -598,7 +598,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 .testimonial .testimonial__image {
-  width: 100%; /*with this, we have a responsive image, when we chnage the size of the page, the size of the image change accordingly*/
+  width: 100%; /*with this, we have a responsive image, when we chnage the size of the page, the size of the image change accordingly
+  and with grid--1x2, we have always two equal elements as slice => a div and an image!*/
 }
 
 /* for wider screens */
