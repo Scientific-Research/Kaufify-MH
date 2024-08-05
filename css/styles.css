@@ -603,6 +603,22 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   and with grid--1x2, we have always two equal elements as slice => a div and an image!*/
 }
 
+.container .testimonial__icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: red;
+  border-radius: 50%;
+  padding: 0.9rem;
+
+  top: 15px;
+  right: -5%;
+  position: absolute;
+}
+
+.container {
+  position: relative;
+}
+
 /* for wider screens */
 @media screen and (min-width: 1024px) {
   /* We make font-size for all the below classes for wider screens smaller! */
