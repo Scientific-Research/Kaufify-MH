@@ -587,7 +587,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 /* adding three column but when our screen is wider than laptop and big screens */
 @media screen and (min-width: 1024px) {
-  .grid--1x2 {
+  .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
