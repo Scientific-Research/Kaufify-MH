@@ -592,6 +592,15 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   }
 }
 
+/* TESTIMONIALS */
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial .testimonial__image {
+  width: 100%; /*with this, we have a responsive image, when we chnage the size of the page, the size of the image change accordingly*/
+}
+
 /* for wider screens */
 @media screen and (min-width: 1024px) {
   /* We make font-size for all the below classes for wider screens smaller! */
