@@ -572,6 +572,19 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   }
 }
 
+/* GRIDS */
+.grid {
+  display: grid;
+}
+
+/* screen wider than Tablet! */
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    /* We take all available space, then divided by two and finally we give to everyone a slice! */
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* for wider screens */
 @media screen and (min-width: 1024px) {
   /* We make font-size for all the below classes for wider screens smaller! */
