@@ -642,8 +642,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 /* TESTIMONIALS */
 .testimonial {
-  padding: 3rem; /*to have some space inside the testimonial frame*/
-  margin: 5rem; /*to have some space between body and testimonial frame*/
+  padding: 3.5rem; /*to have some space inside the testimonial frame*/
+  margin: 3rem; /*to have some space between body and testimonial frame*/
 }
 
 .testimonial .testimonial__image {
