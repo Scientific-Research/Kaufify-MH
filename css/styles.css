@@ -514,6 +514,26 @@ a {
   /* left: 33rem; */
 }
 
+/* for wider screens for plan*/
+@media screen and (min-width: 1024px) {
+  /* We make font-size for all the below classes for wider screens smaller! */
+  .plan__name {
+    font-size: 1.4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+
+  .plan__description {
+    font-size: 1.7rem;
+  }
+}
+
 /* MEDAI OBJECTS */
 .media {
   display: flex;
@@ -637,24 +657,4 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 .container {
   position: relative;
-}
-
-/* for wider screens */
-@media screen and (min-width: 1024px) {
-  /* We make font-size for all the below classes for wider screens smaller! */
-  .plan__name {
-    font-size: 1.4rem;
-  }
-
-  .plan__price {
-    font-size: 5rem;
-  }
-
-  .plan__billing-cycle {
-    font-size: 1.6rem;
-  }
-
-  .plan__description {
-    font-size: 1.7rem;
-  }
 }
