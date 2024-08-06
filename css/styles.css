@@ -716,3 +716,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .callout__content {
   text-align: center;
 }
+
+/* for screens wider that 768px */
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+  }
+}
