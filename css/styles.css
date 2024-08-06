@@ -257,10 +257,10 @@ a {
 /* MOSH SOLUTION => to make a circle around the icon--primary - mosh uses span element with icon-container class around the svg component as following:*/
 .icon-container {
   background: #f3f9fa;
-  /* width: 6.4rem;
-  height: 6.4rem; */
-  width: 3.4rem;
-  height: 3.4rem;
+  width: 6.4rem;
+  height: 6.4rem;
+  /* width: 3.4rem;
+  height: 3.4rem; */
   border-radius: 50%;
   /* span is an inline element and width and height have no effect on the inline element => that's why i have to chnage it to the inline-block and not block because maybe in the feature i want to put it beside another element and i don't want the line-break with this element. */
 
@@ -656,7 +656,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   top: 2rem; /*the space from top of the image to the down for 30px*/
 
   /* right: -5%; This doesn't help because when we chnage the size ofthe page, the position of the page changes accordingly and that's what we don't want! We want that the icon has a fixed position on the image, that's why pixel is best solution instead of the %*/
-  right: -1.7rem; /*-32px => it is half of the 64px which is width of the icon and guaratnie that the half of the icon stay on the right side of the image and other half on the left side*/
+  right: -3.2rem; /*-32px => it is half of the 64px which is width of the icon and guaratnie that the half of the icon stay on the right side of the image and other half on the left side*/
   position: absolute;
 }
 
