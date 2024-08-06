@@ -764,13 +764,18 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 .collapsible__content {
   /* visibility: hidden; */
-  display: none;
+  /* transition: display 0.3s; transition for display will not work => we have to do a trick! we comment the display:none out and use max-height:0*/
+  /* display: none; */
+  max-height: 0; /*with this, we will have overflow and we see still the text anyway! TO HIDE THE TEXT, WE HAVE TO USE overflow:hidden;*/
+  overflow: hidden;
 }
 
 .collapsible--expanded .collapsible__content {
   /* display: block; */
   /* visibility: visible; */
-  display: contents;
+  /* display: contents; Instead of this, we use max-height:100vh*/
+  /* changing from display to the max-height to be able to use the transition for max-height: */
+  max-height: 100vh; /*using max-height instead of height, the content takes height it needs and not more than that, but only with height and not max-height, it takes the entire height of view port but we don't want that!*/
 }
 
 .collapsible--expanded .collapsible__chevron {
