@@ -747,4 +747,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 /* Collapsibles */
 .collapsible__header {
   display: flex;
+  justify-content: space-between; /*push the items at the edges and add the space in between them!*/
+}
+
+.collapsible__heading {
+  /* margin-top: 0;  */
+  font-size: 3rem;
 }
