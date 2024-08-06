@@ -229,6 +229,11 @@ a {
   height: 3rem;
 }
 
+.icon--very--small {
+  width: 2rem;
+  height: 2rem;
+}
+
 /* applying our skins using BEM naming convention(Block Element Modifier) with double hyphen(--) in a few other classes below:*/
 /* Example for BEM => using two hyphens(--), we separate the BLOCK which is icon from MODIFIER which is primary! */
 .icon--primary {
@@ -252,8 +257,10 @@ a {
 /* MOSH SOLUTION => to make a circle around the icon--primary - mosh uses span element with icon-container class around the svg component as following:*/
 .icon-container {
   background: #f3f9fa;
-  width: 6.4rem;
-  height: 6.4rem;
+  /* width: 6.4rem;
+  height: 6.4rem; */
+  width: 3.4rem;
+  height: 3.4rem;
   border-radius: 50%;
   /* span is an inline element and width and height have no effect on the inline element => that's why i have to chnage it to the inline-block and not block because maybe in the feature i want to put it beside another element and i don't want the line-break with this element. */
 
@@ -551,7 +558,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 /* .media .media__body .media__title{ */
 .quote__author {
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 2rem;
   /* font-weight: 500; */
   font-weight: 600;
   font-style: normal;
@@ -562,7 +570,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .quote__organization {
   color: var(--color-headings);
   opacity: 0.4;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 1.5rem;
   font-style: normal;
 }
 
@@ -618,10 +627,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 .container .icon-container {
-  top: 3rem; /*the space from top of the image to the down for 30px*/
+  /* top: 3rem; the space from top of the image to the down for 30px */
+  top: 2rem; /*the space from top of the image to the down for 30px*/
 
   /* right: -5%; This doesn't help because when we chnage the size ofthe page, the position of the page changes accordingly and that's what we don't want! We want that the icon has a fixed position on the image, that's why pixel is best solution instead of the %*/
-  right: -3.2rem; /*-32px => it is half of the 64px which is width of the icon and guaratnie that the half of the icon stay on the right side of the image and other half on the left side*/
+  right: -1.7rem; /*-32px => it is half of the 64px which is width of the icon and guaratnie that the half of the icon stay on the right side of the image and other half on the left side*/
   position: absolute;
 }
 
