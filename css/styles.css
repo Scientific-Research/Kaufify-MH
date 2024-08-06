@@ -724,7 +724,12 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   }
 
   .callout .btn {
-    justify-self: start;
+    justify-self: start; /*move the button from center and bring it close to the text*/
     /* justify-self: left; THIS HAS THE SAME RESULT LIKE start*/
+    /* margin: 0 2rem; MOSH SOLUTION => to make a 2rem space between the button and the text*/
+  }
+
+  .callout .grid--1x2 {
+    column-gap: 2rem; /* MY SOLUTION => to make a 2rem space between the button and the text*/
   }
 }
