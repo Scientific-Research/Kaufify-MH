@@ -690,6 +690,20 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 .callout__heading {
   color: #fff;
-  margin-top: 0;
+  /* margin-top: 0; */
   font-size: 3rem;
+}
+
+/* THIS GRID IS ONLY FOR LEARNING AND DOES NOTHING! */
+.grid123 {
+  display: grid;
+  justify-items: stretch; /*to align horizontally*/
+  align-items: stretch; /*to align vertically*/
+  /* Stretch is efault value, that's why we see that the button is vertically and horizontally stretched! */
+}
+/* WHAT IS THE SOLUTION TO PREVENT THE BUTTON FROM STRETCHING IN A GRID: */
+.callout .btn {
+  /* justify-items and align-items are used to align grid but WHEN WE WANT TO ALIGN AN ITEM IN THIS GRID, WE HAVE TO USE self INSTEAD OF items. HERE OUR GRID ITEM IS BUTTON!*/
+  justify-self: center; /*align an item in a grid horizontally*/
+  align-self: center; /*align an item in a grid vertically*/
 }
