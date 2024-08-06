@@ -224,6 +224,11 @@ a {
   height: 4rem;
 }
 
+.icon--small {
+  width: 3rem;
+  height: 3rem;
+}
+
 /* applying our skins using BEM naming convention(Block Element Modifier) with double hyphen(--) in a few other classes below:*/
 /* Example for BEM => using two hyphens(--), we separate the BLOCK which is icon from MODIFIER which is primary! */
 .icon--primary {
