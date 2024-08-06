@@ -732,4 +732,14 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   .callout .grid--1x2 {
     column-gap: 2rem; /* MY SOLUTION => to make a 2rem space between the button and the text*/
   }
+
+  .callout .grid--1x2 {
+    /* previously there were two columns with equal width => 1fr 1fr */
+    grid-template-columns: 1fr auto;
+    /* BUT NOW, THE BUTTON TAKES THE SPACE WHAT IT NEEDS WITH auto AND ALL THE EXTRA SPACE WHICH LEFTS WILL ALLOCATE TO THE TEXT  */
+    /* IMPORTANT NOTE: 
+    WHEN WE WANT THAT AN ITEM TAKES THE SPACE WHAT IT NEEDS AND FITS IN ITS WIDTH AND NOT MORE, WE USE auto KEYWORD.
+    THE LEFT AVAILABLE EXTRA SPACE WILL ALLOCATE TO OTHER ITEMS WITH fr KEYWORD!
+    */
+  }
 }
