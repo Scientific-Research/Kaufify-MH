@@ -722,4 +722,9 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   .callout__content {
     text-align: left;
   }
+
+  .callout .btn {
+    justify-self: start;
+    /* justify-self: left; THIS HAS THE SAME RESULT LIKE start*/
+  }
 }
