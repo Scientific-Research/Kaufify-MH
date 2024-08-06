@@ -562,6 +562,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   line-height: 1.3;
 }
 
+.quote__text {
+  margin-bottom: 1rem;
+}
+
 .quote--primary .quote__text::before {
   /* content: "“"; */
   content: open-quote; /*this is the predefined value in html*/
