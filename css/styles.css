@@ -642,7 +642,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 /* TESTIMONIALS */
 .testimonial {
-  padding: 3.5rem; /*to have some space inside the testimonial frame*/
+  padding: 4rem; /*to have some space inside the testimonial frame*/
   margin: 3rem; /*to have some space between body and testimonial frame*/
 }
 
@@ -664,7 +664,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   position: relative;
 }
 
-/* for screen wider than 768px */
+/* for screen wider than 768px for TESTIMONIALS */
 @media screen and (min-width: 768px) {
   .testimonial .quote,
   .testimonial .quote__author {
@@ -672,6 +672,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   }
 
   .testimonial .quote {
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
+    margin-left: 5rem;
   }
 }
