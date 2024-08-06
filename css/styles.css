@@ -766,8 +766,14 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   /* visibility: hidden; */
   /* transition: display 0.3s; transition for display will not work => we have to do a trick! we comment the display:none out and use max-height:0*/
   /* display: none; */
+  /* changing from display to the max-height to be able to use the transition for max-height: */
   max-height: 0; /*with this, we will have overflow and we see still the text anyway! TO HIDE THE TEXT, WE HAVE TO USE overflow:hidden;*/
   overflow: hidden;
+
+  opacity: 0;
+  /* transition: max-height 0.3s; we can now apply the transition to the max-height */
+  transition: max-height 0.3s, opacity 0.3s; /*OR USING all KEYWORD as following => both have the same result!*/
+  /* transition: all 0.3s; */
 }
 
 .collapsible--expanded .collapsible__content {
@@ -776,6 +782,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   /* display: contents; Instead of this, we use max-height:100vh*/
   /* changing from display to the max-height to be able to use the transition for max-height: */
   max-height: 100vh; /*using max-height instead of height, the content takes height it needs and not more than that, but only with height and not max-height, it takes the entire height of view port but we don't want that!*/
+  opacity: 1;
 }
 
 .collapsible--expanded .collapsible__chevron {
