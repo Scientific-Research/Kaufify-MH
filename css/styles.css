@@ -754,3 +754,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   /* margin-top: 0;  */
   font-size: 3rem;
 }
+
+.collapsible .icon-container {
+  background: none; /*to remove the above #f3f9fa background color around the icon, because we don't want that here! */
+}
