@@ -231,6 +231,10 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--white {
+  fill: #fff;
+}
+
 /* MY SOLUTION => to make a circle around the icon--primary - i used the below class(circle-around-icon) to do that!*/
 /* .circle-around-icon {
   width: 6.4rem;
@@ -254,6 +258,11 @@ a {
   display: inline-flex;
   align-items: center; /* align vertically */
   justify-content: center; /* align horizontally*/
+}
+
+/* using this class to make the color of the icon red! */
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 /* BUTTONS */
