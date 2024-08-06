@@ -755,7 +755,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   font-size: 3rem;
 }
 
-.collapsible .icon-container {
+.collapsible .collapsible__chevron {
   background: none; /*to remove the above #f3f9fa background color around the icon, because we don't want that here! */
 
   transform: rotate(-90deg); /*turn it 90 deg counter clockwise!*/
@@ -764,4 +764,14 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .collapsible__content {
   /* visibility: hidden; */
   display: none;
+}
+
+.collapsible--expanded .collapsible__content {
+  /* display: block; */
+  /* visibility: visible; */
+  display: contents;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
 }
