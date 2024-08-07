@@ -858,13 +858,17 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .nav .nav__toggler {
   opacity: 0.5; /*semi transparent and grey*/
   align-self: center; /*to center the toggler icon in the middle of narrow nav*/
+  transition: box-shadow 0.15s; /*a soft shadow for 0.15s*/
+  cursor: pointer;
 }
 
 /* .nav .nav__toggler:hover { */
 /* we use double class selector => it means we write two classes side by side without any space between them => .nav.collapsible--expanded => IT GIVES US 100% GUARANTIE THAT THIS ITEMS ONLY FOR NAVBAR WIL BE EXPANDED AND NOT IN OTHER PART OF THE PROGRAM => THIS IS LIKE LOGIC AND => WE SELECT AN ELEMENT WHICH HAS BOTH CLASSES!*/
 .nav.collapsible--expanded .nav__toggler {
   opacity: 1; /*complete transparent and white*/
+  /* horizontal and vertical offsets, bluring and making the shadow softer, spread the shadow with 3px and the color is #666  */
   box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
 }
 
 .nav__list {
