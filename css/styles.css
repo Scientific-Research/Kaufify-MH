@@ -854,10 +854,13 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   justify-content: space-between;
 }
 
-/* 
-.icon--white {
-  margin: 1rem;
-} */
+.nav .icon--white {
+  opacity: 0.5; /*semi transparent and grey*/
+}
+
+.nav .icon--white:hover {
+  opacity: 1; /*complete transparent and white*/
+}
 
 .nav__list {
   /* MOSH SOLUTION => TO KEEP THE ICON AND TOGGLER IN THE FIRST LINE AND PUSH THE LIST OF ITEMS IN THE SECOND LINE USING THIRDLY => WIDTH:100% */
