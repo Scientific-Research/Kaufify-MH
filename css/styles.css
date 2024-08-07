@@ -818,3 +818,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   /* padding-bottom: 10rem; */
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
+
+.block--skewed-left {
+  /* go to this website: https://bennettfeely.com/clippy/ => select Custom Polygon and then we can create our cuson polygon: */
+  /* Top-left corner, Top-right corner, Buttom right corner, last selected point => each group seperated with a comma has a X-offset and Y-offset! */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  /* padding-bottom: 10rem; */
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
