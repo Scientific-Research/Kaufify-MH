@@ -791,7 +791,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 /* Blocks */
 .block {
-  padding: 6rem 2rem;
+  /* defining a local variable here instead of defining this variable in :root as global variable: */
+  --padding-vertical: 6rem; /* and now this variable is available to this block element and its all children */
+  /* padding: 6rem 2rem; */
+  padding: var(--padding-vertical) 2rem;
   border: 2px solid red;
 }
 
@@ -812,5 +815,6 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   /* go to this website: https://bennettfeely.com/clippy/ => select Custom Polygon and then we can create our cuson polygon: */
   /* Top-left corner, Top-right corner, Buttom right corner, last selected point => each group seperated with a comma has a X-offset and Y-offset! */
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-  padding-bottom: 10rem;
+  /* padding-bottom: 10rem; */
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
