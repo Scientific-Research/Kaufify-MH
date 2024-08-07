@@ -856,11 +856,12 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .nav__list {
   /* MOSH SOLUTION => TO KEEP THE ICON AND TOGGLER IN THE FIRST LINE AND PUSH THE LIST OF ITEMS IN THE SECOND LINE USING THIRDLY => WIDTH:100% */
   /* width: 100%; */
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .nav__item {
   /* margin-bottom: 1rem; */
+  padding: 0.5rem 2rem;
   border-bottom: 1px solid #222;
 }
 
@@ -868,8 +869,13 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .nav__item > a {
   /* margin-bottom: 1rem; */
   color: #d2d0db;
+  transition: color 0.3s; /*change the color when i hover on any link would be smoother!*/
 }
 
 /* a {
   color: #d2d0db;
 } */
+
+.nav__item > a:hover {
+  color: #fff;
+}
