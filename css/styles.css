@@ -859,6 +859,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   padding: 2rem;
 }
 
+.nav__item {
+  /* margin-bottom: 1rem; */
+  border-bottom: 1px solid #222;
+}
+
 /* change the color of direct child of the li which is ancher => a */
 .nav__item > a {
   /* margin-bottom: 1rem; */
