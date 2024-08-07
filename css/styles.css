@@ -807,3 +807,9 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .block--dark .block__heading {
   color: #fff; /*only the heading in block--dark section becomes white color and not others!*/
 }
+
+.block--skewed-right {
+  /* go to this website: https://bennettfeely.com/clippy/ => select Custom Polygon and then we can create our cuson polygon: */
+  /* Top-left corner, Top-right corner, Buttom right corner, last selected point => each group seperated with a comma has a X-offset and Y-offset! */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
