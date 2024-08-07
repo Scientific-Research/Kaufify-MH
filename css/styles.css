@@ -794,3 +794,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   padding: 6rem 2rem;
   border: 2px solid red;
 }
+
+.block__heading {
+  margin-top: 0;
+}
