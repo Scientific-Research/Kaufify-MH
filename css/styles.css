@@ -860,8 +860,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   align-self: center; /*to center the toggler icon in the middle of narrow nav*/
 }
 
-.nav .nav__toggler:hover {
+/* .nav .nav__toggler:hover { */
+/* we use double class selector => it means we write two classes side by side without any space between them => .nav.collapsible--expanded => IT GIVES US 100% GUARANTIE THAT THIS ITEMS ONLY FOR NAVBAR WIL BE EXPANDED AND NOT IN OTHER PART OF THE PROGRAM => THIS IS LIKE LOGIC AND => WE SELECT AN ELEMENT WHICH HAS BOTH CLASSES!*/
+.nav.collapsible--expanded .nav__toggler {
   opacity: 1; /*complete transparent and white*/
+  box-shadow: 0 0 0 3px #666;
 }
 
 .nav__list {
