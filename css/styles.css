@@ -854,11 +854,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   justify-content: space-between;
 }
 
-.nav .icon--white {
+.nav .nav__toggler {
   opacity: 0.5; /*semi transparent and grey*/
 }
 
-.nav .icon--white:hover {
+.nav .nav__toggler:hover {
   opacity: 1; /*complete transparent and white*/
 }
 

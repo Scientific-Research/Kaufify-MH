@@ -294,16 +294,16 @@
 
     <!-- Navigation Bars -->
 
-    <nav class="nav">
+    <nav class="nav collapsible">
       <!-- we will have three items in nav section => 1.logo 2.toggler button 3.some items -->
       <!-- a>img -->
       <div class="nav__content">
         <a href="/"><img src="/images/logo.svg" alt="Home Page" /></a>
-        <svg class="icon icon--white circle-around-icon">
+        <svg class="icon icon--white circle-around-icon nav__toggler">
           <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
       </div>
-      <ul class="list nav__list">
+      <ul class="list nav__list collapsible__content">
         <!-- li>a -->
         <li class="nav__item"><a href="#">Hosting</a></li>
         <li class="nav__item"><a href="#">VPS</a></li>
