@@ -798,3 +798,12 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .block__heading {
   margin-top: 0;
 }
+
+.block--dark {
+  background-color: #000;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: #fff; /*only the heading in block--dark section becomes white color and not others!*/
+}
