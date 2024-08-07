@@ -838,3 +838,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 /* Navigation Bars */
+.nav {
+  /* height: 100vh; */
+  /* width: 100vw; */
+  background: #000;
+  display: flex;
+  justify-content: space-between; /*the first and the last item pushed to the sides and the remaining space will be distributed between other items!*/
+  flex-wrap: nowrap;
+}
