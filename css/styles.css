@@ -845,7 +845,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   justify-content: space-between; */
   /*the first and the last item pushed to the sides and the remaining space will be distributed between other items!*/
   /* flex-wrap: wrap; */
-  padding: 1rem; /*overall padding horizontally and vertically around the entire nav*/
+  padding: 0 1rem;
+  /*overall padding horizontally and vertically around the entire nav*/
 }
 
 .nav__content {
@@ -856,6 +857,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 .nav .nav__toggler {
   opacity: 0.5; /*semi transparent and grey*/
+  align-self: center; /*to center the toggler icon in the middle of narrow nav*/
 }
 
 .nav .nav__toggler:hover {
