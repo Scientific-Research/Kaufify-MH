@@ -260,7 +260,8 @@
 
     <!-- Blocks -->
     <!-- To dipsly a section semantically => we use section  -->
-    <section class="block">
+    <!-- This block due to have container in its class, will be restricted to the 1140px -->
+    <section class="block container">
       <div class="block__header">
         <h2 class="block__heading">Heading</h2>
         <p>
@@ -281,7 +282,8 @@
     </section>
 
     <section class="block block--dark block--skewed-left">
-      <div class="block__header">
+      <!-- this container will confine the content of the block only in 1140px but not the total block. Block stretches itselft till end of the page => more than 1140px -->
+      <div class="container">
         <h2 class="block__heading">Heading</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,

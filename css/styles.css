@@ -795,7 +795,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   --padding-vertical: 6rem; /* and now this variable is available to this block element and its all children */
   /* padding: 6rem 2rem; */
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .block__header {
@@ -829,4 +829,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
   /* padding-bottom: 10rem; */
   padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; /*for wider screens, the right side of the white block will be too much free space and we don't want that => that's why we bring the block in the middle!  */
+  /* 0: we have 0px vertically margin and auto: when we have extra space at the right side of the block, it will be divided automatically on the both sides of the block and will not stay only at right side of the block => it means the block always remain in the middle of the page(centered on the page!) */
 }
