@@ -297,16 +297,18 @@
     <nav class="nav">
       <!-- we will have three items in nav section => 1.logo 2.toggler button 3.some items -->
       <!-- a>img -->
-      <a href="/"><img src="/images/logo.svg" alt="Home Page" /></a>
-      <svg class="icon icon--primary circle-around-icon">
-        <use xlink:href="images/sprite.svg#menu"></use>
-      </svg>
-      <ul class="list">
+      <div class="nav__content">
+        <a href="/"><img src="/images/logo.svg" alt="Home Page" /></a>
+        <svg class="icon icon--primary circle-around-icon">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+      </div>
+      <ul class="list nav__list">
         <!-- li>a -->
-        <li><a href="#">Hosting</a></li>
-        <li><a href="#">VPS</a></li>
-        <li><a href="#">Domain</a></li>
-        <li><a href="#">Pricing</a></li>
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
       </ul>
     </nav>
     <script src="js/main.js"></script>
