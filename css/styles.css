@@ -737,7 +737,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
     /* previously there were two columns with equal width => 1fr 1fr */
     grid-template-columns: 1fr auto;
     /* BUT NOW, THE BUTTON TAKES THE SPACE WHAT IT NEEDS WITH auto AND ALL THE EXTRA SPACE WHICH LEFTS WILL ALLOCATE TO THE TEXT  */
-    /* IMPORTANT NOTE: 
+    /* IMPORTANT NOTE:
     WHEN WE WANT THAT AN ITEM TAKES THE SPACE WHAT IT NEEDS AND FITS IN ITS WIDTH AND NOT MORE, WE USE auto KEYWORD.
     THE LEFT AVAILABLE EXTRA SPACE WILL ALLOCATE TO OTHER ITEMS WITH fr KEYWORD!
     */
@@ -845,6 +845,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   justify-content: space-between; */
   /*the first and the last item pushed to the sides and the remaining space will be distributed between other items!*/
   /* flex-wrap: wrap; */
+  padding: 1rem; /*overall padding horizontally and vertically around the entire nav*/
 }
 
 .nav__content {
@@ -852,6 +853,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   display: flex;
   justify-content: space-between;
 }
+
+/* 
+.icon--white {
+  margin: 1rem;
+} */
 
 .nav__list {
   /* MOSH SOLUTION => TO KEEP THE ICON AND TOGGLER IN THE FIRST LINE AND PUSH THE LIST OF ITEMS IN THE SECOND LINE USING THIRDLY => WIDTH:100% */
