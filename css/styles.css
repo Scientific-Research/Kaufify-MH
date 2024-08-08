@@ -940,6 +940,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 /* Hero */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
