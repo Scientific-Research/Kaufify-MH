@@ -304,7 +304,10 @@ a {
 .btn .icon {
   width: 2rem;
   height: 2rem;
-  /* margin-right: 1rem; => I don't need this, because i use flex(gap) in Domain Block section!*/
+  /* margin-right: 1rem; => MOSH SOLUTION => I don't need this, because i use flex(gap) in Domain Block section!*/
+  /* vertical-align: middle; MOSH SOLUTION TO ALIGN THE MAGNIFIER AND SEARCH WORD VERTICALLY IN THE MIDDLE - MY SOLUTION IS IN Domain Block SECTION - I USED THE display:flex*/
+
+  /* align-self: center; MY SOLUTION => AS AN ALTERNATIVE => BUT THE align-items: center; IN btn--search HAS TO BE COMMENTED OUT!*/
 }
 
 /* applying our skins using BEM naming convention(Block Element Modifier) with double hyphen(--) in a few other classes below:*/
@@ -984,6 +987,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 /* Domain Block */
+/* MY SOLUTION => USING FLEX - MOSH SOLUTION IS IN btn SECTION AND COMMENTED OUT ALREADY! */
 .btn--search {
   display: flex;
   align-items: center; /*to align the SEARCH word and search icon(magnifier) in center vertically */
