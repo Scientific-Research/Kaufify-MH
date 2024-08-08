@@ -946,3 +946,13 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   letter-spacing: 0.1rem;
   padding: 2rem 0 5rem 0;
 }
+
+.hero__image {
+  width: 100%; /*with this, we have a responsive image that strechtes to fill its container! */
+  /* width: 100vw; This doesn't work well like with:100%*/
+}
+
+/* THIS IS ALREADY THERE ON THE LINE 802 ABOVE - WE DON'T NEED TO REAPEAT IT HERE AGAIN! */
+/* .block__header {
+  text-align: center; 
+  } */
