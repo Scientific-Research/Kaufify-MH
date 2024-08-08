@@ -998,4 +998,5 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: none;
+  margin: 4rem 0; /*vertical space for 4rem between input-group and the paragraph and below the input-group */
 }
