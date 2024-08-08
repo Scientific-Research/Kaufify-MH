@@ -963,6 +963,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 /* for Tablets and wider screens */
 @media screen and (min-width: 768px) {
+  /* removing the extra space of top of the grid  */
+  .hero {
+    padding-top: 0;
+  }
+
   .hero__content {
     text-align: left;
     align-self: center;
