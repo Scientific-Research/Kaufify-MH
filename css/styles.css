@@ -1011,6 +1011,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
   font-size: 2rem;
   font-weight: 600;
+  max-width: 700px; /*it was calculated in Photoshop from beginning to the end of the domain with prices (6 items) => this list will not grow more than 700px, it doesn't matter, when we add or remove one item form this list, it will stay always with maximum width of 700px */
+
+  /* BUT WITH MAX-WIDTH:700px, HOW CAN WE PUT THE 6 ITEMS IN THE MIDDLE: */
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
