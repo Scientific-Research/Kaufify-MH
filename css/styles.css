@@ -998,7 +998,12 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: none;
-  margin: 4rem 0; /*vertical space for 4rem between input-group and the paragraph and below the input-group */
+  /* margin: 4rem 0; */
+  /*vertical space for 4rem between input-group and the paragraph and below the input-group */
+  margin: 4rem auto;
+  /* the input-group is in the middle now using auto */
+  max-width: 670px;
+  /* we made the max-width of the input-group 30 pixel smaller than the 6 items's width which is 700px */
 }
 
 .block-domain__prices {
@@ -1013,7 +1018,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   font-weight: 600;
   max-width: 700px; /*it was calculated in Photoshop from beginning to the end of the domain with prices (6 items) => this list will not grow more than 700px, it doesn't matter, when we add or remove one item form this list, it will stay always with maximum width of 700px */
 
-  /* BUT WITH MAX-WIDTH:700px, HOW CAN WE PUT THE 6 ITEMS IN THE MIDDLE: */
+  /* BUT WITH MAX-WIDTH:700px, HOW CAN WE PUT THE 6 ITEMS IN THE MIDDLE USING auto: */
   margin: 0 auto;
 }
 
