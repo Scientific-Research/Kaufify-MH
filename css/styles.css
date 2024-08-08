@@ -1012,3 +1012,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   font-size: 2rem;
   font-weight: 600;
 }
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    display: flex;
+    justify-content: space-around;
+  }
+}
