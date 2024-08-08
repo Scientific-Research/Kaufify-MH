@@ -408,7 +408,7 @@ a {
   flex-grow: 1;
   /* MOSH SOLUTION => to grow up the flex container and take all the available space!*/
 
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   /*The important point here is that, we want to reduce the vertical space between wordpress icon and the text but only and only when the input is in the input-group and not our original input, that's why i change the vertical padding here and not in the original(basic) input above!*/
 }
 
@@ -993,4 +993,9 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   align-items: center; /*to align the SEARCH word and search icon(magnifier) in center vertically */
   /* justify-content: center; */
   column-gap: 1rem; /*gap between the SEARCH word and search icon(magnifier)*/
+}
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: none;
 }
