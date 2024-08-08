@@ -1007,4 +1007,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr; */
   grid-template-rows: repeat(2, 6rem);
+  justify-items: center; /*horizontally alignment the grid items in the center!*/
+
+  font-size: 2rem;
+  font-weight: 600;
 }
