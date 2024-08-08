@@ -897,3 +897,43 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .nav__item > a:hover {
   color: #fff;
 }
+
+.nav__brand {
+  transform: translateY(5px);
+  /*bring five pixels the icon => moshify icon down!*/
+}
+
+/* targetting Tablet and wider screens */
+@media screen and (min-width: 768px) {
+  /* ALL THE BELOW STATEMENTS ARE ***MY SOLUTION*** */
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__brand {
+    transform: translateY(22px);
+    /*bring 22px the icon => moshify iocn down!*/
+  }
+
+  /* .nav__content {
+    padding: 0;
+    margin: 0;
+  } */
+
+  .nav__list {
+    /* --width-auto: auto; */
+    /* width: var(--width-auto); */
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+    justify-content: flex-end; /*to put these four words(Hosting VPS Domain Pricing ) at the right hand of the nav Bar at the end!*/
+    transform: translateY(-30px);
+    /*to align the list(four words in a row) at right hand with mosh icon at left hand*/
+  }
+
+  .nav__item {
+    border: 0;
+  }
+}
