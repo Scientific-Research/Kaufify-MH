@@ -1015,7 +1015,16 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 @media screen and (min-width: 768px) {
   .block-domain__prices {
-    display: flex;
-    justify-content: space-around;
+    /* MY SOLUTION USING FLEX WHICH IS SIMPLEST:*/
+    /* display: flex;
+    justify-content: space-around; */
+
+    /* MOSH SOLUTION USING GRID AGAIN: */
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* but the problem with this method is that: when tomorrow i removed an item or added an item, I have to rememeber where i have to go and change the number 6 manually to a new number which is difficult! */
+    /* SO, HOW CAN WE CHANGE IT TO AN AUTOMATIC METHOD: */
+    grid-template-columns: repeat(auto-fit, 1fr);
+    /* with auto-fit, the grid will try to create as many columns as needed to fit all the items in this grid automatically but it doesn't work fr and we have to chnage it to the pixel: */
+    grid-template-columns: repeat(auto-fit, 100px);
   }
 }
