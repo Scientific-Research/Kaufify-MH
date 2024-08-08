@@ -960,3 +960,12 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 /* .block__header {
   text-align: center; 
   } */
+
+/* for Tablets and wider screens */
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+    align-self: center;
+    /* to bring this content in the midlle of the grid - the image is already in the middle of the left grid at the left side => therefore, both of them would be in the middle of the hero section! */
+  }
+}
