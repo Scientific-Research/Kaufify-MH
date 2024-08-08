@@ -1033,5 +1033,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
     /* BUT THE PROBLEM IS THAT, I DON'T WANT THAT; EVERY CELL HAS FIXED 100px AND I WANT THAT IT WILL BE CALCULATED AUTOMATICALLY ACOSS THE ENTIRE AVAILABLE SPACE: */
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     /* minimum size of the cell would be 100px and maximum size of the cell would be 1fr - Grid will calculate it automatically according to the available space and the number of grid items => if there will be extra space, it will be divided equally between all the grid items!*/
+
+    /* OR with rem instead of pixel: */
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
