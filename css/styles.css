@@ -299,6 +299,14 @@ a {
   white-space: nowrap; /*when there is not enough space, i don't want to go to the next line!*/
 }
 
+/* Domain Block */
+/* when we have an icon and this icon is available when we have a button!  */
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  /* margin-right: 1rem; => I don't need this, because i use flex(gap) in Domain Block section!*/
+}
+
 /* applying our skins using BEM naming convention(Block Element Modifier) with double hyphen(--) in a few other classes below:*/
 /* Example for BEM => using two hyphens(--), we separate the BLOCK which is icon from MODIFIER which is primary! */
 .btn--primary {
@@ -976,11 +984,6 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 /* Domain Block */
-.icon--search {
-  width: 3rem;
-  height: 3rem;
-}
-
 .btn--search {
   display: flex;
   align-items: center; /*to align the SEARCH word and search icon(magnifier) in center vertically */
