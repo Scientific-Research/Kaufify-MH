@@ -938,3 +938,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
     border: 0;
   }
 }
+
+/* Hero */
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 0.1rem;
+  padding: 2rem 0 5rem 0;
+}
