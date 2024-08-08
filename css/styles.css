@@ -668,7 +668,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   and with grid--1x2, we have always two equal elements as slice => a div and an image!*/
 }
 
-.container .icon-container {
+.container--testimonial .icon-container {
   /* top: 3rem; the space from top of the image to the down for 30px */
   top: 2rem; /*the space from top of the image to the down for 30px*/
 
@@ -677,7 +677,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   position: absolute;
 }
 
-.container {
+.container--testimonial {
   position: relative;
 }
 
