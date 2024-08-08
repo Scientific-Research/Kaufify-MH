@@ -1000,3 +1000,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   border: none;
   margin: 4rem 0; /*vertical space for 4rem between input-group and the paragraph and below the input-group */
 }
+
+.block-domain__prices {
+  display: grid;
+  /* In mobile view, we have three columns and two rows: */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-template-rows: repeat(2, 6rem);
+}
