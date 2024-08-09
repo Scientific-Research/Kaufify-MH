@@ -1120,3 +1120,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .feature__heading {
   margin: 1rem 0;
 }
+
+.feature {
+  gap: 4rem; /*vertically and horizontally */
+}
