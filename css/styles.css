@@ -452,6 +452,11 @@ a {
   color: #fff;
 }
 
+/* change the color of the badge in primary card to see that in primary color!  */
+.card--primary .badge--primary {
+  background: #126de4;
+}
+
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
