@@ -1098,10 +1098,17 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   transform: scale(1.15);
 }
 
+.block--plans .grid--1x3 {
+  gap: 8rem 4rem;
+  /* 8rem => row gap horizontally in mobile version(i mean when our browser is small like a mobile screen, otherwise, hover doesn't work in mobile version!), when we click on each card, it will be bigger and have overlap with neighbour card, this is not good, with 8rem as gap, this problem will be solved! */
+
+  /* 4rem => column gap in desktop version to make the three cards separated vertically */
+}
+
 @media screen and (min-width: 1024px) {
-  .block--plans .grid--1x3 {
+  /* .block--plans .grid--1x3 {
     column-gap: 4rem;
-  }
+  } */
 
   /* To make the card with popular.svg a little bit(10%) bigger in desktop version: */
   .block--plans .plan--popular {
