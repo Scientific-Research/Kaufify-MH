@@ -1052,3 +1052,12 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .block--plans .grid--1x3 {
   row-gap: 4rem; /*we make a 4rem row-gap between all three cards in MOBILE version!*/
 }
+
+@media screen and (min-width: 768px) {
+  /* .block--plans .plan {
+    max-width: 1100px;
+  } */
+  .grid--1x3 {
+    justify-content: center;
+  }
+}
