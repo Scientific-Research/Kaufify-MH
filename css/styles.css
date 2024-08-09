@@ -1053,11 +1053,20 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   row-gap: 4rem; /*we make a 4rem row-gap between all three cards in MOBILE version!*/
 }
 
-@media screen and (min-width: 768px) {
-  /* .block--plans .plan {
-    max-width: 1100px;
-  } */
-  .grid--1x3 {
-    justify-content: center;
+.block--plans .plan {
+  max-width: 500px; /*We kepp it simple => till laptop, we have always max-width of 500px - 1024px(laptop) and more than that, we will have enough space for all three card, that's why, they will come all togethre in a row!*/
+
+  /* MOSH SOLUTION TO PUT THE GRIDS VERTICALLY IN THE MIDDLE OF THE PAGE */
+  /* margin: 0 auto; */
+}
+
+/* MY SOLUTION TO PUT THE GRIDS VERTICALLY IN THE MIDDLE OF THE PAGE */
+.block--plans .grid--1x3 {
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .block--plans .grid--1x3 {
+    column-gap: 4rem;
   }
 }
