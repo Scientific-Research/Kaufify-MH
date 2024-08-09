@@ -1083,4 +1083,9 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   .block--plans .plan--popular {
     transform: scale(1.1);
   }
+
+  .block--plans .plan__entry .list--tick .list__item:last-child {
+    /* display: none; */
+    visibility: hidden; /*to keep the height of both Entry and Enterprise cards equal, I keep the space for the last entry in Entry card and make it hidden in visibility and not none in display!*/
+  }
 }
