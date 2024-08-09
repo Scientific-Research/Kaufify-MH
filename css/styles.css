@@ -1122,5 +1122,9 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 .feature {
-  gap: 4rem; /*vertically and horizontally */
+  gap: 4rem 2rem; /*4rem for row in mobile version and 2rem for column in desktop version*/
+}
+
+.feature__image {
+  width: 100%;
 }
