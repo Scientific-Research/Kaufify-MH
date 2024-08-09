@@ -513,6 +513,10 @@ a {
   position: absolute;
 } */
 
+/* .plan--popular {
+  transform: scale(1.1);
+} */
+
 /* MY SECOND SOLUTION plus MOSH SOLUTION=> creating popular Badge on top right of the Card using Pseudo element => before */
 
 /* when we have the popular badge in our plan, then the .card__header would be positioned as relative, otherwise not!  */
@@ -1073,5 +1077,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 @media screen and (min-width: 1024px) {
   .block--plans .grid--1x3 {
     column-gap: 4rem;
+  }
+
+  /* To make the card with popular.svg a little bit(10%) bigger in desktop version: */
+  .block--plans .plan--popular {
+    transform: scale(1.1);
   }
 }
