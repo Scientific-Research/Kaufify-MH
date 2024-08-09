@@ -1049,6 +1049,6 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 /* Plans Block */
-.plans--block {
-  display: flex;
+.block--plans .grid--1x3 {
+  row-gap: 4rem; /*we make a 4rem row-gap between all three cards in MOBILE version!*/
 }
