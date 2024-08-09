@@ -1079,6 +1079,25 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   visibility: hidden; /*to keep the height of both Entry and Enterprise cards equal, I keep the space for the last entry in Entry card and make it hidden in visibility and not none in display!*/
 }
 
+/* make the scale() smooth instead of sudden movement*/
+.block--plans .plan {
+  /* transition: all 0.5s; */
+  transition: transform 0.2s ease-out;
+  /* ease-out: smooth finish - when something is disappearing slowly from the screen => when a car is coming to a stop! */
+
+  /* ease-in: smooth start - when something is appearing slowly on the screen => when a car is leaving a stop! */
+}
+
+/* Only for Entry and Enterprise Cards => we make these two cards only 0.05(5%) bigger! */
+.block--plans .plan:hover {
+  transform: scale(1.05);
+}
+
+/* Only for Business Card with Popular.svg => we make it scale(1.15) because it was already scale(1.1) and we make it 0.05 bigger like other two cards! */
+.block--plans .plan--popular:hover {
+  transform: scale(1.15);
+}
+
 @media screen and (min-width: 1024px) {
   .block--plans .grid--1x3 {
     column-gap: 4rem;
@@ -1087,30 +1106,5 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   /* To make the card with popular.svg a little bit(10%) bigger in desktop version: */
   .block--plans .plan--popular {
     transform: scale(1.1);
-  }
-
-  /* .block--plans .plan__entry .list--tick .list__item:last-child {
-    /* display: none; */
-  /* visibility: hidden;  */
-  /*to keep the height of both Entry and Enterprise cards equal, I keep the space for the last entry in Entry card and make it hidden in visibility and not none in display!*/
-  /* }  */
-
-  /* make the scale() smooth instead of sudden movement*/
-  .block--plans .plan {
-    /* transition: all 0.5s; */
-    transition: transform 0.2s ease-out;
-    /* ease-out: smooth finish - when something is disappearing slowly from the screen => when a car is coming to a stop! */
-
-    /* ease-in: smooth start - when something is appearing slowly on the screen => when a car is leaving a stop! */
-  }
-
-  /* Only for Entry and Enterprise Cards => we make these two cards only 0.05(5%) bigger! */
-  .block--plans .plan:hover {
-    transform: scale(1.05);
-  }
-
-  /* Only for Business Card with Popular.svg => we make it scale(1.15) because it was already scale(1.1) and we make it 0.05 bigger like other two cards! */
-  .block--plans .plan--popular:hover {
-    transform: scale(1.15);
   }
 }
