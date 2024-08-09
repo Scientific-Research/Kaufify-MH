@@ -1074,6 +1074,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   justify-content: center;
 }
 
+.block--plans .plan__entry .list--tick .list__item:last-child {
+  /* display: none; */
+  visibility: hidden; /*to keep the height of both Entry and Enterprise cards equal, I keep the space for the last entry in Entry card and make it hidden in visibility and not none in display!*/
+}
+
 @media screen and (min-width: 1024px) {
   .block--plans .grid--1x3 {
     column-gap: 4rem;
@@ -1084,10 +1089,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
     transform: scale(1.1);
   }
 
-  .block--plans .plan__entry .list--tick .list__item:last-child {
+  /* .block--plans .plan__entry .list--tick .list__item:last-child {
     /* display: none; */
-    visibility: hidden; /*to keep the height of both Entry and Enterprise cards equal, I keep the space for the last entry in Entry card and make it hidden in visibility and not none in display!*/
-  }
+  /* visibility: hidden;  */
+  /*to keep the height of both Entry and Enterprise cards equal, I keep the space for the last entry in Entry card and make it hidden in visibility and not none in display!*/
+  /* }  */
 
   /* make the scale() smooth instead of sudden movement*/
   .block--plans .plan {
