@@ -1200,6 +1200,6 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   .block-showcase__image {
     width: auto; /*for tablets and wider than that we want to display the image in its original(big) size!*/
     justify-self: end; /*to put the image at the end of its cell in such a way that it will not exceed the cell and doesn't go to the neighbourhood cell!*/
-    
+    max-width: 700px; /*the width of the image will not get larger than 700px*/
   }
 }
