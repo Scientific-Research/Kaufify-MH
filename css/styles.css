@@ -1159,10 +1159,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 /* Showcases */
-.showcase {
+/* %%%%%%%%%%%%% MY SOLUTION %%%%%%%%%%%%%%%% */
+/* .showcase {
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* .block__heading {
   text-align: center;
@@ -1171,3 +1172,13 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 /* .showcase__firstItem{
   display: flex;
 } */
+
+/* .grid--2x2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.showcase .paragraph{
+  grid-column: 2/3;
+} */
+/* %%%%%%%%%%%%% MY SOLUTION %%%%%%%%%%%%%%%% */
