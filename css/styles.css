@@ -1228,4 +1228,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
     max-width: 700px;
     /*the width of the image will not get larger than 700px*/
   }
+
+  .block-showcase .list {
+    margin-top: 3rem; /*space between header and list(ul)*/
+  }
 }
