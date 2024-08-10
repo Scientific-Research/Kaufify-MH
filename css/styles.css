@@ -1123,8 +1123,15 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 .feature {
   gap: 4rem 2rem; /*4rem for row in mobile version and 2rem for column in desktop version*/
-  margin: 12rem 0; /*to make 12rem space vertically between both top and bottom */
+  /* margin: 12rem 0; to make 12rem space vertically between both top and bottom */
+  margin: 6rem 0; /*to make 12rem space vertically between both top and bottom */
 }
+
+/* MOSH SOLUTION => to decrease the distance between the grid items and the header: */
+/* MY SOLUTION => to change it directly in feature class and not the first grid item!*/
+/* .feature:first-of-type {
+  margin-top: 6rem;
+} */
 
 .feature__image {
   width: 100%;
