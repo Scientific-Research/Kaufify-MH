@@ -1123,6 +1123,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 .feature {
   gap: 4rem 2rem; /*4rem for row in mobile version and 2rem for column in desktop version*/
+  margin: 12rem 0; /*to make 12rem space vertically between both top and bottom */
 }
 
 .feature__image {
