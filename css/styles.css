@@ -1157,3 +1157,13 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
     /* Order:2 => by default the order of our content is 0 and when we change it to any other number than 0, the order will chnage and we will have SWAP. */
   }
 }
+
+/* Showcases */
+.showcase {
+  align-items: center;
+  justify-content: center;
+}
+
+/* .block__heading {
+  text-align: center;
+} */
