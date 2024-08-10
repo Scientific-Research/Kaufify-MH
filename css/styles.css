@@ -1129,3 +1129,24 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .feature__image {
   width: 100%;
 }
+
+/* for tablet and wider screens */
+@media screen and (min-width: 768px) {
+  /* MY SOLUTION => TO SWAP THE PHOTO AND TEXT POSITIONS IN SECOND GRID */
+  /* .feature--computer .feature__content {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .feature--computer .feature__picture {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  } */
+
+  /* MOSH SOLUTION => TO SWAP THE PHOTO AND TEXT POSITIONS IN SECOND GRID */
+  /* with nth-of-type(even) we can grab the even items like second, fourth, sixth, ... */
+  .feature:nth-of-type(even) .feature__content {
+    order: 1;
+    /* Order:2 => by default the order of our content is 0 and when we change it to any other number than 0, the order will chnage and we will have SWAP. */
+  }
+}
