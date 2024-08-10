@@ -1185,8 +1185,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   grid-column: 2/3;
 } */
 /* %%%%%%%%%%%%% MY SOLUTION %%%%%%%%%%%%%%%% */
-.block-showcase__image {
-  width: 100%; /*to make the image responsive*/
+.block-showcase__image > img {
+  width: 100%; /*to make the image responsive. > means direct child*/
 }
 
 /* for tablets and wider than that! */
@@ -1197,9 +1197,15 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
     grid-template-columns: 50% 50%; /*we have now two equal columns, regardless if one is small or one is large! => 57rem, 57rem*/
   }
 
+  /* WE HAVE TO APPLY THIS CLASS(block-showcase__image) TO THE PICTURE AND NOT img ANYMORE. BECAUSE AFTER ADDING picture, THE img WOULD NOT BE GRID AND THE picture WOULD BE GRID!  */
   .block-showcase__image {
-    width: auto; /*for tablets and wider than that we want to display the image in its original(big) size!*/
     justify-self: end; /*to put the image at the end of its cell in such a way that it will not exceed the cell and doesn't go to the neighbourhood cell!*/
-    max-width: 700px; /*the width of the image will not get larger than 700px*/
+  }
+
+  /* > means direct child => we don't need to define a new class here, because there is always a direct img inside a picture, that's why we can always use this direct child! */
+  .block-showcase__image > img {
+    width: auto; /*for tablets and wider than that we want to display the image in its original(big) size!*/
+    max-width: 700px;
+    /*the width of the image will not get larger than 700px*/
   }
 }
