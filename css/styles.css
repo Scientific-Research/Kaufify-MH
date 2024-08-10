@@ -20,6 +20,13 @@
 }
 
 /* Typography */
+
+/* when we select a part of a text or a headline, the color of selected area would be highlight with blue color and the text inside the area would be white using selection Pseudo element!*/
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
 html {
   /* font-size: 16px; */
   /*by default is 16px => this is set by the browser*/
