@@ -842,7 +842,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .block--skewed-right {
   /* go to this website: https://bennettfeely.com/clippy/ => select Custom Polygon and then we can create our cuson polygon: */
   /* Top-left corner, Top-right corner, Buttom right corner, last selected point => each group seperated with a comma has a X-offset and Y-offset! */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   /* padding-bottom: 10rem; */
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
@@ -850,7 +850,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .block--skewed-left {
   /* go to this website: https://bennettfeely.com/clippy/ => select Custom Polygon and then we can create our cuson polygon: */
   /* Top-left corner, Top-right corner, Buttom right corner, last selected point => each group seperated with a comma has a X-offset and Y-offset! */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   /* padding-bottom: 10rem; */
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
@@ -962,10 +962,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   }
 }
 
-/* Hero */
-.hero {
+/* Hero => we don't need this here anymore, because we applied 90% in original clip-path*/
+/* .hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
+} */
 
 .hero__tagline {
   font-size: 2rem;
@@ -1187,6 +1187,14 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 /* %%%%%%%%%%%%% MY SOLUTION %%%%%%%%%%%%%%%% */
 .block-showcase__image > img {
   width: 100%; /*to make the image responsive. > means direct child*/
+}
+
+.block-showcase .list {
+  color: var(--color-body-darker);
+}
+
+.block-showcase h3 {
+  font-weight: 500;
 }
 
 /* for tablets and wider than that! */
