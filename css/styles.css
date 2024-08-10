@@ -564,6 +564,7 @@ a {
 .media {
   display: flex;
   column-gap: 2rem;
+  /* margin-bottom: 4rem; */
 }
 
 /* I made margin:0 in Universal RESET, so, i don't need to repeat it again here(This is mosh solution!)*/
@@ -1191,6 +1192,10 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 .block-showcase .list {
   color: var(--color-body-darker);
+}
+
+.block-showcase .list > li {
+  margin-bottom: 4rem; /*to make 4 rem space between medias, lis are direct child of ul, that'S why i can use direct child feature here and we don't need to define a new class here!*/
 }
 
 .block-showcase h3 {
