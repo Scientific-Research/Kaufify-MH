@@ -1161,7 +1161,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   }
 }
 
-/* Showcases */
+/* Showcase Block */
 /* %%%%%%%%%%%%% MY SOLUTION %%%%%%%%%%%%%%%% */
 /* .showcase {
   align-items: center;
@@ -1185,3 +1185,6 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   grid-column: 2/3;
 } */
 /* %%%%%%%%%%%%% MY SOLUTION %%%%%%%%%%%%%%%% */
+.block-showcase__image {
+  width: 100%; /*to amke the image responsive*/
+}
