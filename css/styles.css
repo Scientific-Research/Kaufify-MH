@@ -597,7 +597,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 .quote__text {
-  margin-bottom: 1rem;
+  margin: 3rem 0;
 }
 
 .quote--primary .quote__text::before {
@@ -640,9 +640,14 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 }
 
 /*for wider screens for Quotes*/
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) { */
+@media screen and (min-width: 768px) {
   .quote {
     font-size: 2rem;
+  }
+
+  .quote__text {
+    margin: 1rem 0;
   }
 
   .quote__author {
@@ -829,6 +834,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 .block__header {
   text-align: center; /*to align text and header in center!*/
+  margin-bottom: 4rem;
 }
 
 .block__heading {
