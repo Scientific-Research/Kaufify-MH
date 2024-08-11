@@ -1306,4 +1306,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
     opacity: 1; it means transparency is zero, that's why we see the text very solid!
     max-height: 100%; it means we see all the content, because height is 100%
   } */
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
 }
