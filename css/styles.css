@@ -1239,3 +1239,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
     margin-top: 3rem; /*space between header and list(ul)*/
   }
 }
+
+/* Footer */
+.footer {
+  background: #232323; /*the color shoild be a little bit brighter that the pure block!*/
+}
