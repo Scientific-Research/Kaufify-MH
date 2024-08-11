@@ -1310,4 +1310,17 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   .footer__copyright {
     font-size: 1.5rem;
   }
+
+  .footer__brand {
+    margin: 0 2rem;
+    margin-top: 1rem; /*to bring the kaufify icon in align to the other items towards the top!*/
+  }
+
+  .footer__section {
+    border: none; /* OR border:0 */
+  }
+
+  .footer__heading {
+    font-size: 1.6rem;
+  }
 }
