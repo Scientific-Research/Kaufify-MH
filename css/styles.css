@@ -1265,3 +1265,21 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   color: #fff;
   opacity: 0.3;
 }
+
+/* for tablet and wider screen */
+@media screen and (min-width: 768px) {
+  /* MY SOLUTION => BUT WHEN I WANT TO CHANGE THE NUMBER OF COLUMNS IN THE FEATURE, I HAVE TO BACK HERE AND CHNAGE THIS NUMBER => THIS WORKS BUT IS NOT A GOOD SOLUTION */
+  /* .footer__sections {
+    grid-template-columns: repeat(5, 1fr);
+  } */
+
+  /* MOSH SOLUTION WHICH IS FLEXIBLE AND WE DON'T NEED TO CHANGE IT IN THE FEATURE WHEN WE WANT TO ADD A COLUMN INTO THAT! */
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .footer__brand {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
