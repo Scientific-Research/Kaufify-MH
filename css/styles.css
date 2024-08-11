@@ -1245,9 +1245,22 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   background: #232323; /*the color shoild be a little bit brighter that the pure block!*/
 }
 
+.footer a {
+  color: #777; /*changing the default color of the browser to this color!*/
+  transition: color 0.3s; /*a beautiful hover effect when we hover on a link!*/
+}
+
+.footer a:hover {
+  color: #fff; /*change the color of a link to white when we hover on a link!*/
+}
+
 .footer__section {
   padding: 2rem;
   border-bottom: 1px solid #393939;
+}
+
+.footer__section .list {
+  margin: 0;
 }
 
 .footer__heading {
