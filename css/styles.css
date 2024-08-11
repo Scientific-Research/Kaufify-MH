@@ -1284,4 +1284,18 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
     grid-column: 1/2;
     grid-row: 1/2;
   }
+
+  .footer .collapsible__chevron {
+    /* we have to remove the chevron collapsible icon in tablet and wider screens!*/
+    display: none;
+  }
+
+  /* MY SOLUTION => I added the collapsible--expanded as class to all sections, that's why all the contents expanded in desktop version and we don't need to write the mosh code as following:*/
+
+  /* MOSH SOLUTION: */
+  /* .footer .collapsible__content {
+    display: block => will not work here, because we defined already the following items and we have to follow them now too:
+    opacity: 1; it means transparency is zero, that's why we see the text very solid!
+    max-height: 100%; it means we see all the content, because height is 100%
+  } */
 }
