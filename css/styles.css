@@ -1275,7 +1275,9 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
   /* MOSH SOLUTION WHICH IS FLEXIBLE AND WE DON'T NEED TO CHANGE IT IN THE FEATURE WHEN WE WANT TO ADD A COLUMN INTO THAT! */
   .footer__sections {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* auto-fit: the columns fit into the grid as much as it can, but it doesn't work with fr and we have to change it to the minmax() */
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 
   .footer__brand {
