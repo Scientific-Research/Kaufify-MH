@@ -1273,6 +1273,12 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   margin-top: 5rem;
 }
 
+.footer__brand img {
+  /* TODO: Consider refactoring this and applying it to all images.*/
+  width: 100%; /*it makes only the kaufify icon responsive when i change the page!*/
+  max-width: 230px; /*without this, the icon looks very large, 230px is its width and we confine it to its maximum size in mobile mode and it will looks smaller!*/
+}
+
 .footer__copyright {
   font-size: 2.1rem;
   color: #fff;
@@ -1321,7 +1327,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   } */
 
   .footer__copyright {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .footer__brand {
@@ -1335,5 +1341,9 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
   .footer__heading {
     font-size: 1.6rem;
+  }
+
+  .footer__section .list {
+    font-size: 1.3rem;
   }
 }
