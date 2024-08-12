@@ -850,8 +850,45 @@
           <li class="nav__item"><a href="#">Pricing</a></li>
         </ul>
       </nav>
-      <script src="js/main.js"></script>
     </header>
+
+    <!-- Hero -->
+    <!-- section.block.block--dark.block--skewed-left -->
+    <!-- ATTENTION: WE STRAT FROM GENERIC CLASSES AND THEN GO TO THE SPECIAL CLASSES - SPECIAL CLASSES WILL OVERWRITE THE GENERIC CLASSES => hero as special class will overwrite the block--skewed-left as generic class! -->
+    <section class="block block--dark block--skewed-left hero">
+      <!-- the content of Hero section in desktop version is constrained by a container with 1140px width, that's why we limit the hero section to 1140px by adding the container to its class below => our container will have two columns grid!-->
+      <div class="conatiner grid grid--1x2">
+        <!-- First Grid Item For First Column -->
+        <!-- we make this as header of our block component => div -> header => block__header makes all three items centered! -->
+        <header class="block__header hero__content">
+          <!-- class="block__heading" makes the color of h2 white! -->
+          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <p class="hero__tagline">
+            Deploy your websites in less than 60 seconds.
+          </p>
+          <!-- a.btn.btn--accent -->
+          <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+        <!-- First Grid Item For First Column -->
+
+        <!-- Second Grid Item For Second Column => It is an image-->
+
+        <!-- changing the size of the images to a much smaller size and type of them to webp type using this website: https://cloudconvert.com/  -->
+        <!-- using photoshop => banner@1x.png(570px => 239KB) => using https://cloudconvert.com/ => banner@1x.webp(42KB) -->
+        <!-- using photoshop => banner@2x.png(1140px => 694KB) => using https://cloudconvert.com/ => banner@2x.webp(105KB) -->
+        <!-- We write both image types here, when a Browser doesn't support webp type, can use the png type! -->
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/banner@1x.webp 1x, images/banner@2x.webp 2x" />
+          <source
+            type="image/png"
+            srcset="images/banner@1x.png 1x, images/banner@2x.png 2x" />
+          <img class="hero__image" src="/images/banner@1x.webp" alt=""
+        /></picture>
+      </div>
+    </section>
+
     <!-- Adding our Javascript file to the html file! -->
     <script src="js/main.js"></script>
   </body>
