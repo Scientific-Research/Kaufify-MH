@@ -417,6 +417,9 @@ a {
 
   padding: 1.5rem 2rem;
   /*The important point here is that, we want to reduce the vertical space between wordpress icon and the text but only and only when the input is in the input-group and not our original input, that's why i change the vertical padding here and not in the original(basic) input above!*/
+
+  width: 0;
+  /* we have to set the width to 0, otherwise the browser will set the width automatically, so that it will take all the width and it will be bigger than the parent, that's why we have to set it manually to stop the browser to assign it by self! */
 }
 
 /* Input for wider screen */
