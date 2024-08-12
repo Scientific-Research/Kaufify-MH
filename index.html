@@ -738,11 +738,11 @@
     <!-- Footer -->
     <!-- <footer class="block block--dark footer">
       <div class="container grid footer__sections"> -->
-        <!-- Collapsibles -->
-        <!-- we have now something like true or false to show and hide the content and chevron icon using collapsible--expanded BEM class => show CSS, the Collapsibles section-->
-        <!-- <section class="collapsible collapsible--expanded footer__section"> -->
-          <!-- header>h2{Item $}*3 -->
-          <!-- <header class="collapsible__header">
+    <!-- Collapsibles -->
+    <!-- we have now something like true or false to show and hide the content and chevron icon using collapsible--expanded BEM class => show CSS, the Collapsibles section-->
+    <!-- <section class="collapsible collapsible--expanded footer__section"> -->
+    <!-- header>h2{Item $}*3 -->
+    <!-- <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Products</h2>
             <span class="icon-container collapsible__chevron">
               <svg class="icon icon--white circle-around-icon">
@@ -759,10 +759,10 @@
           </div>
         </section> -->
 
-        <!-- we have now something like true or false to show and hide the content and chevron icon using collapsible--expanded BEM class => show CSS, the Collapsibles section-->
-        <!-- <section class="collapsible collapsible--expanded footer__section"> -->
-          <!-- header>h2{Item $}*3 -->
-          <!-- <header class="collapsible__header">
+    <!-- we have now something like true or false to show and hide the content and chevron icon using collapsible--expanded BEM class => show CSS, the Collapsibles section-->
+    <!-- <section class="collapsible collapsible--expanded footer__section"> -->
+    <!-- header>h2{Item $}*3 -->
+    <!-- <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Company</h2>
             <span class="icon-container collapsible__chevron">
               <svg class="icon icon--white circle-around-icon">
@@ -779,10 +779,10 @@
           </div>
         </section> -->
 
-        <!-- we have now something like true or false to show and hide the content and chevron icon using collapsible--expanded BEM class => show CSS, the Collapsibles section-->
-        <!-- <section class="collapsible collapsible--expanded footer__section"> -->
-          <!-- header>h2{Item $}*3 -->
-          <!-- <header class="collapsible__header">
+    <!-- we have now something like true or false to show and hide the content and chevron icon using collapsible--expanded BEM class => show CSS, the Collapsibles section-->
+    <!-- <section class="collapsible collapsible--expanded footer__section"> -->
+    <!-- header>h2{Item $}*3 -->
+    <!-- <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Support</h2>
             <span class="icon-container collapsible__chevron">
               <svg class="icon icon--white circle-around-icon">
@@ -799,10 +799,10 @@
           </div>
         </section> -->
 
-        <!-- we have now something like true or false to show and hide the content and chevron icon using collapsible--expanded BEM class => show CSS, the Collapsibles section-->
-        <!-- <section class="collapsible collapsible--expanded footer__section"> -->
-          <!-- header>h2{Item $}*3 -->
-          <!-- <header class="collapsible__header">
+    <!-- we have now something like true or false to show and hide the content and chevron icon using collapsible--expanded BEM class => show CSS, the Collapsibles section-->
+    <!-- <section class="collapsible collapsible--expanded footer__section"> -->
+    <!-- header>h2{Item $}*3 -->
+    <!-- <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Domains</h2>
             <span class="icon-container collapsible__chevron">
               <svg class="icon icon--white circle-around-icon">
@@ -828,8 +828,30 @@
       </div>
     </footer> -->
 
-
-    
+    <header>
+      <!-- Navigation Bars -->
+      <!-- <nav class="nav collapsible collapsible--expanded"> -->
+      <nav class="nav collapsible">
+        <!-- we will have three items in nav section => 1.logo 2.toggler button 3.some items -->
+        <!-- a>img -->
+        <div class="nav__content">
+          <a class="nav__brand" href="/"
+            ><img src="/images/logo.png" alt="Home Page"
+          /></a>
+          <svg class="icon icon--white circle-around-icon nav__toggler">
+            <use xlink:href="images/sprite.svg#menu"></use>
+          </svg>
+        </div>
+        <ul class="list nav__list collapsible__content">
+          <!-- li>a -->
+          <li class="nav__item"><a href="#">Hosting</a></li>
+          <li class="nav__item"><a href="#">VPS</a></li>
+          <li class="nav__item"><a href="#">Domain</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+      <script src="js/main.js"></script>
+    </header>
     <!-- Adding our Javascript file to the html file! -->
     <script src="js/main.js"></script>
   </body>
