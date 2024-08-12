@@ -1039,9 +1039,11 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .block-domain__prices {
   display: grid;
   /* In mobile view, we have three columns and two rows: */
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* INSTEAD OF FIXED NUMBER OF 1fr, WE USE auto-fit TO FIT THE GRID THE ITEMS INSIDE THE COLUMN AS IT CAN, THE WIDTH OF EVERY CELL IN THIS COLUMN CAN BE VARIABLE FROM 100px to 1rem!  */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   /* grid-template-rows: 1fr 1fr; */
-  grid-template-rows: repeat(2, 6rem);
+  grid-template-rows: repeat(3, 6rem);
   justify-items: center; /*horizontally alignment the grid items in the center!*/
 
   font-size: 2rem;
