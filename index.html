@@ -1241,6 +1241,65 @@
       </div>
     </section>
 
+    <!-- Testimonial Block -->
+    <section class="block">
+      <header class="block__header">
+        <h2>What our Customers are Saying:</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, impedit!
+        </p>
+      </header>
+      <div class="container">
+        <!-- Testimonials -->
+        <!-- div.card>div.grid.grid--1x2 -->
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="container container--testimonial">
+              <img
+                class="testimonial__image"
+                src="/images//testimonial.jpg"
+                alt="A happy smiling customer"
+              />
+              <span class="icon-container icon-container--accent">
+                <svg
+                  class="icon icon--white circle-around-icon icon--very--small"
+                >
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <!-- Quotes -->
+            <blockquote class="quote quote--primary">
+              <p class="quote__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                asperiores consectetur eaque suscipit reiciendis quia a laborum
+                ullam molestias blanditiis.
+              </p>
+
+              <!-- Iocn, The name of the person and the company name are all like the Media Objects that we had already, so we can use media again(copy paste from media.html here) to only replace the items and not more! -->
+              <footer>
+                <!-- MEDAI OBJECTS -->
+                <!-- .media>.media__image+.media__body -->
+                <div class="media">
+                  <div class="media__image">
+                    <svg
+                      class="icon icon--primary circle-around-icon quote__line"
+                    >
+                      <use xlink:href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">John Smith</h3>
+                    <p class="quote__organization">ABC Company</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Adding our Javascript file to the html file! -->
     <script src="js/main.js"></script>
   </body>
