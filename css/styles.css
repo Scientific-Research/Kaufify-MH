@@ -177,7 +177,7 @@ a {
 /* Our basic structure => in one class */
 .list {
   list-style: none; /*to get ride of default bullet points*/
-  color: var(--color-headings);
+  /* color: var(--color-headings); */
 }
 
 /* applying our skins using BEM naming convention(Block Element Modifier) with double hyphen(--) in a few other classes below:*/
@@ -1052,6 +1052,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
   /* BUT WITH MAX-WIDTH:700px, HOW CAN WE PUT THE 6 ITEMS IN THE MIDDLE USING auto: */
   margin: 0 auto;
+  color: var(--color-headings);
 }
 
 @media screen and (min-width: 768px) {
