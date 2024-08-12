@@ -300,7 +300,8 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0; /*margin only in vertical direction!*/
-  padding: 2rem 3rem;
+  /* padding: 2rem 3rem; */
+  padding: 2rem 4vw; /*to make the button responsive for diffirent devices, we use vw instaed of rem!*/
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap; /*when there is not enough space, i don't want to go to the next line!*/
