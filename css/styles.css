@@ -724,7 +724,8 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 .callout {
   padding: 1rem;
   border-radius: 10px;
-  margin: 2rem;
+  margin: 0 2rem;
+  transform: translateY(-12%); /*to bring the callout section in the middle!*/
 }
 
 .callout__text {
