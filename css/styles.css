@@ -1343,7 +1343,7 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   }
 
   /* MOSH SOLUTION (a little bit complicated)=> to move the Kaufify icon from last position in the raw to the first position! */
-  .footer__sections section:last-child {
+  .footer__sections div:last-child {
     /* Last child is Kaufify icon */
     /* the default order of the elements in the grid is 0 and -1 means move Kaufify icon from last position to the front! */
     order: -1;
