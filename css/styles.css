@@ -722,8 +722,13 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 /* CALLOUTS */
 .callout {
-  padding: 4rem;
-  border-radius: 5px;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.callout__text {
+  text-align: left;
 }
 
 .callout--primary {
