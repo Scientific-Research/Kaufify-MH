@@ -725,7 +725,9 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
   padding: 1rem;
   border-radius: 10px;
   margin: 0 2rem;
-  transform: translateY(-12%); /*to bring the callout section in the middle!*/
+  /* margin: auto 2rem; */
+  transform: translateY(-12%);
+  /* to bring the callout section in the middle! */
 }
 
 .callout__text {
@@ -763,6 +765,14 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
 
 /* for screens wider that 768px */
 @media screen and (min-width: 768px) {
+  .callout {
+    transform: translateY(-20%);
+    /* to bring the callout section in the middle! */
+    /* margin: auto 2rem; */
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
   .callout__content {
     text-align: left;
   }
@@ -785,6 +795,26 @@ I set the column-gap above for 2rem and i don't need to use the below margin for
     WHEN WE WANT THAT AN ITEM TAKES THE SPACE WHAT IT NEEDS AND FITS IN ITS WIDTH AND NOT MORE, WE USE auto KEYWORD.
     THE LEFT AVAILABLE EXTRA SPACE WILL ALLOCATE TO OTHER ITEMS WITH fr KEYWORD!
     */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .callout {
+    transform: translateY(-35%);
+    /* to bring the callout section in the middle! */
+    /* margin: auto 2rem; */
+    max-width: 80%;
+    /* margin: 0 auto; */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .callout {
+    transform: translateY(-35%);
+    /* to bring the callout section in the middle! */
+    /* margin: auto 2rem; */
+    max-width: 60%;
+    /* margin: 0 auto; */
   }
 }
 
